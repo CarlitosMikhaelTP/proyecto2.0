@@ -1,0 +1,39 @@
+/* CSS para editar el espacio que ocupará un DIV. */
+.my-custom-div {
+    max-width: 1200px; /* Establecer un ancho máximo mayor */
+    width: 700px;  /* Establecer un ancho fijo */
+    height: 500px; /* Establecer una altura fija */
+    /* min-height: 500px; */ /* Establecer una altura mínima */
+    /* max-height: 700px; */ /* Establecer una altura máxima */
+  }
+/* CSS para editar el tamaño de imágenes . */
+  .img-size {
+    width: 300px; /* Establecer ancho fijo */
+    height: 200px; /* Establecer altura fija */
+    object-fit: cover; /* Ajustar la imagen para llenar el espacio sin distorsionarla */
+  }
+
+.principal-square {
+  max-width: 1200px;
+  width: 800px;
+  height: 70vh; 
+}
+
+
+.form-square {
+  max-width: 1000px;
+  width: 700px;
+  height: 55vh;
+}
+
+.in-form-square {
+  max-width: 900px;
+  width: 650px;
+  height: 50vh;
+}
+
+.principal-square-2 {
+  max-width: 1200px;
+  width: 800px;
+  height: 98rem; 
+}

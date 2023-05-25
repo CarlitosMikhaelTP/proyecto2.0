@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+<link rel="stylesheet" href="inicioDocente.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-cubes"></i>
+                PREGUNTADOS
+            </a>
+        </div>
+
+
+        <div class="col-2">
+            <div class="d-flex align-items-center justify-content-center">
+                <div style="padding: 0px 10px 0px 10px;" >
+                    <i class="fas fa-user" ></i>
+                </div>
+
+                <div style="padding: 0px 10px 0px 10px;">
+                    <i class="fas fa-sign-in-alt"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid py-2"  style="background-color: #454545;">    
+            <!-- Creación de Título de Formulario in English  -->
+        <div class="row">   
+            <div class="col-md-12 ">
+               <div class=" fs-1 fw-semibold mt-4 text-white text-center">¡Bienvenido a Preguntados!</div>
+            </div>
+        </div>     
+            <!-- Creación de división de la tabla y las Opciones de Estudiante, Profesor o comité: -->
+            <!-- Especificando el uso de 7 de las 12 columnas -->
+        <div class="row justify-content-between px-5 mt-3 py-3 mx-auto"> 
+            <div class="col-md-7 bg-light rounded-4 px-4 ">
+                <!-- Creando espacio para nombres -->
+                <div class="input-group-text mt-4 text-dark">
+                    <div class="col-md-3 py-3"><label class="h5 fw-regular">Nombres :</label></div>
+                    <input class="form-control form-control-lg" type="text" name="nombre" placeholder="Nombres Completos" required>
+                </div>
+                <!-- Creando espacio para Apellidos -->
+                <div class="input-group-text  text-dark">
+                    <div class="col-md-3 py-3"><label class="h5 fw-regular">Apellidos :</label></div>
+                    <input class="form-control form-control-lg" type="text" name="apellido" placeholder="Apellidos completos" required>
+                </div>
+                <!-- Creando espacio para Gmail -->
+                <div class="input-group-text text-dark">
+                    <div class="col-md-3 py-3"><label class="h5 fw-regular">Correo :</label></div>
+                    <input class="form-control form-control-lg" type="email" name="correo" placeholder="ejemplo@gmail.com" required>
+                </div>
+                <!-- Creando espacio para Contraseña -->
+                <div class="input-group-text text-dark">
+                    <div class="col-md-3 py-3"><label class="h5 fw-regular">Contraseña :</label></div>
+                    <input  class="form-control form-control-lg" type="password" name="contraseña" placeholder="*************" required>
+                </div> 
+                <!-- Creando espacio para confirmar Contraseña -->
+                <div class="input-group-text  text-dark">
+                    <div class="col-md-3 py-3"><label class="h5 fw-regular">Confirmar :</label></div>
+                    <input  class="form-control form-control-lg" type="password" name="Ccontraseña" placeholder="*************" required>
+                </div>
+                  <!-- CREATING CHECKBOX -->
+                <div class="d-flex align-items-baseline gap-3 py-3 px-3">
+                    <input class="form-check-input borde bg-info " type="checkbox">
+                    <div class="pt-1 text-black " style="font-size: 1.1rem;">Acepto términos y condiciones</div>
+                </div> 
+            </div>
+                <!-- CREACION DE CUADRO PARA SELECCIONAR TIPO DE USUARIO usando 4 COLUMNAS DE LAS 12 DEL ROW-->
+                <!-- Creando titulo de selección de tipo de cuenta -->
+            <div class="col-md-4 rounded-4 text-center larger-radio" style="background-color:rgb(136, 170, 229);">
+                <label class="h1 fw-bold py-3">Elige el tipo de cuenta :</label>
+                <div class="form-check px-5 py-4">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="h2 form-check-label px-5" for="flexRadioDefault1">
+                      Estudiante
+                    </label>
+                  </div>
+                  <div class="form-check px-5 py-4">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <label class="h2 form-check-label px-5" for="flexRadioDefault2">
+                      Profesor
+                    </label>
+                  </div>
+                  <div class="form-check px-5 py-4">
+                    <input class="form-check-input " type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="h2 form-check-label px-5" for="flexRadioDefault1">
+                      Comité
+                    </label>
+                  </div>
+            </div>
+        </div>
+         <!-- CREATING BUTTON -->
+        <div class="row col-md-3 mx-auto py-3">
+                <button class="btn btn-default btn-info mt-2 borde fs-3 fw-bold rounded-3" type="submit">Enviar</button>
+                <div class="col-md-7 px-4"><label class="text-decoration-none text-white fw-regular" style="font-size: 1.2rem;">¿Ya tienes una cuenta?</label></div>
+                <div class="col-md-5 "><a href="Login.html" class="text-decoration-none text-white fw-bold" style="font-size: 1.2rem;">Iniciar Sesión</a></div>
+        </div>
+        
+        
+    </div>
+
+    <script src="https://kit.fontawesome.com/a70db94014.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
